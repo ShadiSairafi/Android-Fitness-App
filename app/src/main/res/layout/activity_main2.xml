@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/radieant_background"
+    tools:context=".MainActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BackB"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:text="@string/BackB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/purple"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/listviewB"
+            app:layout_constraintStart_toEndOf="@+id/BackB"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <Button
+            android:id="@+id/listviewB"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@mipmap/lines_button_pic_foreground"
+            android:backgroundTint="@color/black"
+            android:defaultFocusHighlightEnabled="true"
+            app:layout_constraintEnd_toStartOf="@+id/cardsviewB" />
+
+        <Button
+            android:id="@+id/cardsviewB"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@mipmap/cards_button_pic_foreground"
+            android:backgroundTint="@color/black"
+            android:defaultFocusHighlightEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

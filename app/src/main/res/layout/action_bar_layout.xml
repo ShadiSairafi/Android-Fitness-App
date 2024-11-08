@@ -1,0 +1,42 @@
+<!-- res/layout/custom_action_bar.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/radieant_background"
+    android:padding="8dp">
+
+    <!-- TextView for title on the left -->
+    <TextView
+        android:id="@+id/action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"/>
+
+    <!-- Button 1 on the right -->
+    <Button
+        android:id="@+id/action_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 1"
+        android:textColor="@android:color/white"
+        android:background="@mipmap/login_screen_pic2_foreground"
+        android:padding="4dp"/>
+
+    <!-- Button 2 on the right -->
+    <Button
+        android:id="@+id/action_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/black"
+        android:padding="4dp"
+        android:layout_marginStart="8dp"/>
+</LinearLayout>
